@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Главная страница</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/main.css">
+</head>
+<body>
+    <ul>
+        <li>
+            <a href="/">Главная</a>
+        </li>
+         <li>
+            <a href="/contacts/">Контакты</a>
+        </li>
+        <li>
+            <a href="/results/">Результаты</a>
+        </li>
+        <li>
+            <a href="/run/">Запуск</a>
+        </li>
+    </ul>
+    <h1>Привет Мир</h1>
+    <hr>
+    <p>
+        Это первая страница на Flask
+    </p>
+    {{main_data.a}}
+    {{main_data["b"]}}
+    {{main_data.c}}
+
+    {{name}}
+    {{age}}
+
+    <p class="alert">Это предупреждение</p>
+</body>
+</html>
