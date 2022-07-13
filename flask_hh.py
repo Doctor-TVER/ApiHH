@@ -17,14 +17,14 @@ def index():
         'age': 99
     }
 
-    return render_template('index.html', main_data=main_data, **context)
-    # return render_template('index.html', main_data=main_data, name='Leo', age=99)
+    # return render_template('index.html', main_data=main_data, **context)
+    return render_template('index.html', main_data=main_data, name='Leo', age=99)
 
 
 @app.route('/contacts/')
 def contacts():
     # где то взяли данные
-    developer_name = 'Leo'
+    developer_name = 'Yura'
     # Контекст name=developer_name - те данные, которые мы передаем из view в шаблон
     # context = {'name': developer_name}
     # Словарь контекста context
